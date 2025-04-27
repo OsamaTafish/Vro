@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osama's Message Board</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Osama's Message Board</h1>
+
+    <!-- Display the message -->
+    <div id="message-display">
+      <p>{{ message }}</p>
+    </div>
+
+    <!-- Display the image -->
+    <div id="image-display">
+      <img
+        src="{{ url_for('static', filename='vro.png') }}"
+        alt="Visual Representation of Message"
+      />
+    </div>
+    <!-- Form to update the message -->
+    <div id="update-message-form">
+      <form method="POST" action="/add">
+        <label for="text">Update the Message:</label>
+        <input type="text" id="text" name="text" required />
+        <button type="submit">Update</button>
+      </form>
+    </div>
+  </body>
+</html>

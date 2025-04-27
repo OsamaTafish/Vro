@@ -1,0 +1,73 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+/* Title styling */
+h1 {
+  color: #1a73e8; /* Google Blue for the title */
+  margin-top: 20px;
+}
+
+/* Message display styles */
+#message-display {
+  background-color: #ffffff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 50%;
+}
+
+#message-display p {
+  font-size: 2em; /* Increase the font size */
+  font-weight: bold; /* Make the text bolder */
+  color: #000; /* Use a darker color for contrast */
+  margin: 0;
+}
+/* Form styling */
+#update-message-form {
+  margin: 20px auto;
+  padding: 10px;
+  width: 50%;
+}
+
+#update-message-form input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 22px); /* Adjust for padding and border */
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+#update-message-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1a73e8; /* Button blue */
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#update-message-form button:hover {
+  background-color: #1558c4; /* Darker blue on hover */
+}
+
+/* Image display styling */
+#image-display {
+  margin: 20px auto;
+}
+
+#image-display img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
